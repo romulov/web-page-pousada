@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+h1{
+    text-transform: uppercase;
+}
 /*BARRA EM CIMA*/
 .topbar {
     text-transform: uppercase;
@@ -32,7 +35,7 @@
 header{
     display: flex;
     position: sticky;
-    background-color: bisque;
+    background-color: white;
     top: 0;
     height: 12vh;
     text-transform: uppercase;
@@ -47,6 +50,7 @@ header h1{
     position: absolute;
     top: 10%;
     cursor: pointer;
+    padding: 10px;
 }
 header ul{
     display: flex;
@@ -58,14 +62,24 @@ header ul{
 }
 header li{
     color: #454545;
-    text-shadow: 5px 2px 10px rgb(235, 168, 82);
+    text-shadow: 5px 2px 10px rgb(175, 150, 118);
     margin-right: 40px;
+    padding: 10px;
 }
 header li:hover{
     cursor: pointer;
     color: rgb(133, 126, 34);
     opacity: 0.7;
     transition: 1s;
+}
+.nreserve{
+    background-color: bisque;
+    color: #757575;
+    font-weight: 550;
+}
+.nreserve:hover{
+    color: #0f0c0c;
+
 }
 
 /*section home*/
@@ -262,21 +276,251 @@ input[type="submit"]:hover{
 /*section galeria*/
 .galeria{
     height: 100vh;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    position: relative;
+}
+.galeria h1{
+    margin-top: 40px;
+    font-size: 50px;
+    margin-left: 20px;
+}
+.galeria h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+.galeria h3{
+    background-color: bisque;
+    font-size: 12px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+.galeria h3:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.rowgaleria{
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+}
+.galeria-col{
+    display: inline-block;
+    margin: 0 60px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden
+}
+.galeria img{
+    height: 400px;
+    width: 300px;
+}
+.galeria .slide{
+    display: flex;
+}
+.galeria input{
+   display: none;
+}
+.nav{
+    position: absolute;
+    right: 0;
+}
+.bar{
+    margin: 20px;
+    height: 20px;
+    width: 40px;
+    border: double 7px  white;
+}
+.bar:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#slide1c1:checked ~ .s1c1{
+    margin-top: 0;
+    transition: 1s;
+}
+ #slide2c1:checked ~ .s1c1{
+    margin-top: -400px;
+    transition: 1s;
+}
+#slide3c1:checked ~ .s1c1{
+    margin-top: -800px;
+    transition: 1s;
+}
+ #slide4c1:checked ~ .s1c1{
+    margin-top: -1200px;
+    transition: 1s;
+}
+#slide1c2:checked ~ .s1c2{
+    margin-top: 0;
+    transition: 1s;
+}
+ #slide2c2:checked ~ .s1c2{
+    margin-top: -400px;
+    transition: 1s;
+}
+#slide3c2:checked ~ .s1c2{
+    margin-top: -800px;
+    transition: 1s;
+}
+ #slide4c2:checked ~ .s1c2{
+    margin-top: -1200px;
+    transition: 1s;
+}
+#slide1c3:checked ~ .s1c3{
+    margin-top: 0;
+    transition: 1s;
+}
+ #slide2c3:checked ~ .s1c3{
+    margin-top: -400px;
+    transition: 1s;
+}
+#slide3c3:checked ~ .s1c3{
+    margin-top: -800px;
+    transition: 1s;
+}
+ #slide4c3:checked ~ .s1c3{
+    margin-top: -1200px;
+    transition: 1s;
 }
 
 /*section article*/
 article{
     height: 100vh;
-    background-color: #8a8a8a;
+    background-color: #e4e2e2;
+    color:#8a8a8a;
+    position: relative;
+    padding: 20px;
+}
+article h1{
+    font-size: 60px ;
+    font-weight: 550;
+    margin-left: 20px;
+}
+
+.row-article{
+    height:70%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+
+}
+.testimonial{
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 2px 2px 50px rgb(253, 253, 253);
+}
+.testimonial img{
+    height: 130px;
+    border-radius: 50%;
+}
+.testimonial h1, h2{
+    font-size: 20px;
 }
 
 /*section contato*/
 .contato{
-    height: 100vh;
+    height: 100%;
+    background-color: rgba(207, 159, 101, 0.486);
+    color:#8a8a8a;
+    text-align: center;
+    padding: 40px;
 }
+.contato h1{
+    font-size: 50px;
+}
+.contato h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.contato img{
+    max-width: 30px;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+.contato ul{
+    list-style: none;
+
+}
+.contato li{
+    margin-top: 20px;
+}
+
+.col-contact1{
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+    padding: 20px;
+
+}
+.col-contact2{
+    display: inline-block;
+    text-align: left;
+    width: 600px;
+    padding: 20px;
+}
+.contato input, textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    height: 60px;
+}
+
 
 /*section footer*/
 footer{
-    height: 70vh;
-    background-color: #8a8a8a;
+    height: 100%;
+    background-color: #e4e2e2;
+    text-align: center;
+    color:#8a8a8a;
+}
+footer div{
+    display: inline-block;
+    max-width: 25%;
+    padding: 20px;
+    text-align: left;
+}
+footer h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+footer i img{
+    height: 15px;
+}
+.flinks li{
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+.rs1{
+    background-color: #3333bebb;
+}
+.rs2{
+    background-color: #ff00d4bb;
+}
+.rs3{
+    background-color: #0059ffbb;
+}
+.rs4{
+    background-color: #ff0000bb;
+}
+.flinks li:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
