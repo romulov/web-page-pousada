@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*BARRA EM CIMA*/
+.topbar {
+    text-transform: uppercase;
+    font-size: small;
+    background-color: rgb(236, 207, 169);
+    width: 100%;
+    height: 4vh;
+
+}
+.topbar p{
+    position: absolute;
+    right: 0;
+}
+.topbar .tbmsg{
+    left: 0;
+    margin-left: 20px;
+}
+.topbar .tbtel{
+    right: +22%;
+}
+.topbar .tbemail{
+    margin-right: 20px;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    position: sticky;
+    background-color: bisque;
+    top: 0;
+    height: 12vh;
+    text-transform: uppercase;
+    z-index: 10;
+    box-shadow: 1px 1px 10px #0000003f;
+}
+header h1{
+    color: rgb(133, 126, 34);
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-left: 20px;
+    position: absolute;
+    top: 10%;
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    margin-right: 20px;
+}
+header li{
+    color: #454545;
+    text-shadow: 5px 2px 10px rgb(235, 168, 82);
+    margin-right: 40px;
+}
+header li:hover{
+    cursor: pointer;
+    color: rgb(133, 126, 34);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+/*section home*/
+.home{
+    background-image: url(./images/backgroundhome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    text-transform: uppercase;
+    box-shadow: 10px 50px 150px rgba(0, 0, 0, 0.384);
+}
+.home h1{
+    color: #fcf9f9;
+    text-shadow: 2px 2px 5px #535353c0;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    height: 160px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home p{
+    color: #fafafa;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*section sobre*/
+.sobre  {
+    height: 100vh;
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px 50px;
+}
+.sobre h1, h2{
+    text-transform: uppercase;
+}
+.sobre h1{
+    font-size: 50px;
+}
+.sobre h2{
+    margin-bottom: 40px;
+}
+.sobre p{
+    line-height: 40px;
+    margin: 10px;
+}
+.sobre div{
+    display: inline-block;
+    height: 100%;
+}
+.sobre .container{
+    width: 55vw;
+    float: left;
+}
+.sobre .certf{
+    float: right;
+    text-align: center;
+    margin-left: 40px;
+    width: 400px;
+    border: double 20px rgba(197, 148, 92, 0.767);
+}
+.sobre .certf p{
+    
+    line-height: 20px;
+    font-size: 15px ;
+}
+
+/*section pousadas*/
+.pousadas{
+    height: 100vh;
+    color: #8a8a8a;
+    padding: 40px;
+    background-color: #ece8d5;
+}
+.pousadas h1, h2{
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.selection-title{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.selection-title h1{
+    font-size: 50px;
+}
+.selection-title h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.selection-title p{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+.pousada{
+    background-color: #fcfcfc;
+    padding: 30px;
+    overflow: hidden;
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    height: 400px;
+    margin: 0 10px;
+    border: double 10px;
+    border-color: #dfdfdf;
+    border-radius: 4px;
+}
+.pousada img{
+    height: 200px;
+    border: double 4px;
+    border-radius: 2px;
+}
+.pousada h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+.pousada h1{
+    margin-bottom: 20px;
+}
+.pousada:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*section reserve*/
+.reserve{
+    background-color: rgba(207, 159, 101, 0.486);
+    position: relative;
+    padding: 40px 0;
+    height: 150vh;
+    color:#8a8a8a;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reserve h1{
+    font-size: 50px;
+}
+.reserve h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.reserve form{
+    background-image: linear-gradient(72deg, #f0ded6c4 1%, rgb(197, 197, 197) 99%);
+    box-shadow: 2px 5px 2px ;
+    text-align: left;
+    position: absolute;
+    padding: 20px 30px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+}
+.reserve input{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+.reserve select{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.reserve .end{
+    width: 33%;
+}
+.reserve textarea{
+    width: 100%;
+}
+input[type="submit"]{
+    background-color: bisque;
+    border: solid 1px #363636;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(185, 140, 84);
+}
+
+/*section galeria*/
+.galeria{
+    height: 100vh;
+}
+
+/*section article*/
+article{
+    height: 100vh;
+    background-color: #8a8a8a;
+}
+
+/*section contato*/
+.contato{
+    height: 100vh;
+}
+
+/*section footer*/
+footer{
+    height: 70vh;
+    background-color: #8a8a8a;
+}
