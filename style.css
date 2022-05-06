@@ -13,12 +13,15 @@ h1{
     font-size: small;
     background-color: rgb(236, 207, 169);
     width: 100%;
-    height: 4vh;
+    height: 20px;
 
 }
 .topbar p{
     position: absolute;
     right: 0;
+}
+.topbar img{
+    height: 10px;
 }
 .topbar .tbmsg{
     left: 0;
@@ -35,12 +38,16 @@ h1{
 header{
     display: flex;
     position: sticky;
-    background-color: white;
+    background-color: #ffffff;
     top: 0;
     height: 12vh;
     text-transform: uppercase;
     z-index: 10;
     box-shadow: 1px 1px 10px #0000003f;
+}
+header a{
+    text-decoration: none;
+    color: #454545;
 }
 header h1{
     color: rgb(133, 126, 34);
@@ -69,8 +76,8 @@ header li{
 header li:hover{
     cursor: pointer;
     color: rgb(133, 126, 34);
-    opacity: 0.7;
-    transition: 1s;
+    opacity: 0.6;
+    transition: 0.5s;
 }
 .nreserve{
     background-color: bisque;
@@ -78,7 +85,8 @@ header li:hover{
     font-weight: 550;
 }
 .nreserve:hover{
-    color: #0f0c0c;
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgb(151, 150, 150);
 
 }
 
@@ -199,6 +207,17 @@ header li:hover{
     border-color: #dfdfdf;
     border-radius: 4px;
 }
+.pousadas p{
+    background-color: bisque;
+    font-weight: 550;
+    cursor: pointer;
+    padding: 5px;
+}
+.pousadas p:hover{
+    box-shadow: 2px 2px 5px #0000001f;
+    transition: 0.5s;
+
+}
 .pousada img{
     height: 200px;
     border: double 4px;
@@ -214,20 +233,30 @@ header li:hover{
 .pousada:hover{
     cursor: pointer;
     opacity: 0.8;
+    box-shadow: 2px 1px 30px #00000042;
+    transition: 0.5s;
 }
 
 /*section reserve*/
 .reserve{
-    background-color: rgba(207, 159, 101, 0.486);
+    background-image: url(./images/backgroundhome2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-attachment: fixed;
     position: relative;
     padding: 40px 0;
-    height: 150vh;
-    color:#8a8a8a;
+    color:#ebebeb;
     text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
     text-align: center;
 }
 .reserve h1{
+    text-align: left;
+    margin-left: 80px;
     font-size: 50px;
+    text-shadow: 1px 1px 5px #383838bb;
 }
 .reserve h3{
     color: black;
@@ -236,17 +265,15 @@ header li:hover{
     margin-left: 10px;
 }
 .reserve form{
-    background-image: linear-gradient(72deg, #f0ded6c4 1%, rgb(197, 197, 197) 99%);
+    display: inline-block;
+    background-image: linear-gradient(72deg, #f0ded6d8 1%, rgb(197, 197, 197) 99%);
     box-shadow: 2px 5px 2px ;
     text-align: left;
-    position: absolute;
     padding: 20px 30px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 900px;
+    width: 1200px;
 }
 .reserve input{
+    display: inline-block;
     font-size: 15px;
     width: 100%;
     padding: 10px;
@@ -270,7 +297,8 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     cursor: pointer;
-    background-color: rgb(185, 140, 84);
+    background-color: #b98b54e7;
+    transition: 0.5s;
 }
 
 /*section galeria*/
@@ -283,9 +311,10 @@ input[type="submit"]:hover{
 .galeria h1{
     margin-top: 40px;
     font-size: 50px;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 .galeria h2{
+    margin-left: 80px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -294,11 +323,14 @@ input[type="submit"]:hover{
     font-size: 12px;
     position: absolute;
     top: 80px;
-    right: 40px;
+    right: 90px;
+    padding: 5px;
 }
 .galeria h3:hover{
     cursor: pointer;
-    opacity: 0.5;
+
+    box-shadow: 2px 1px 10px #00000042;
+    transition: 0.5s;
 }
 .rowgaleria{
     margin-top: 40px;
@@ -339,51 +371,51 @@ input[type="submit"]:hover{
 }
 #slide1c1:checked ~ .s1c1{
     margin-top: 0;
-    transition: 1s;
+    transition: 1.5s;
 }
  #slide2c1:checked ~ .s1c1{
     margin-top: -400px;
-    transition: 1s;
+    transition: 1.5s;
 }
 #slide3c1:checked ~ .s1c1{
     margin-top: -800px;
-    transition: 1s;
+    transition: 1.5s;
 }
  #slide4c1:checked ~ .s1c1{
     margin-top: -1200px;
-    transition: 1s;
+    transition: 1.5s;
 }
 #slide1c2:checked ~ .s1c2{
     margin-top: 0;
-    transition: 1s;
+    transition: 1.5s;
 }
  #slide2c2:checked ~ .s1c2{
     margin-top: -400px;
-    transition: 1s;
+    transition: 1.5s;
 }
 #slide3c2:checked ~ .s1c2{
     margin-top: -800px;
-    transition: 1s;
+    transition: 1.5s;
 }
  #slide4c2:checked ~ .s1c2{
     margin-top: -1200px;
-    transition: 1s;
+    transition: 1.5s;
 }
 #slide1c3:checked ~ .s1c3{
     margin-top: 0;
-    transition: 1s;
+    transition: 1.5s;
 }
  #slide2c3:checked ~ .s1c3{
     margin-top: -400px;
-    transition: 1s;
+    transition: 1.5s;
 }
 #slide3c3:checked ~ .s1c3{
     margin-top: -800px;
-    transition: 1s;
+    transition: 1.5s;
 }
  #slide4c3:checked ~ .s1c3{
     margin-top: -1200px;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 /*section article*/
@@ -431,8 +463,9 @@ article h1{
     height: 100%;
     background-color: rgba(207, 159, 101, 0.486);
     color:#8a8a8a;
-    text-align: center;
-    padding: 40px;
+    padding:20px;
+    display: flex;
+    justify-content: center;
 }
 .contato h1{
     font-size: 50px;
@@ -440,6 +473,7 @@ article h1{
 .contato h2{
     font-size: 20px;
     font-weight: 500;
+    margin: 0;
 }
 .contato img{
     max-width: 30px;
@@ -453,16 +487,13 @@ article h1{
 .contato li{
     margin-top: 20px;
 }
-
 .col-contact1{
-    display: inline-block;
     text-align: left;
     width: 500px;
     padding: 20px;
 
 }
 .col-contact2{
-    display: inline-block;
     text-align: left;
     width: 600px;
     padding: 20px;
@@ -477,15 +508,18 @@ article h1{
 
 /*section footer*/
 footer{
+    display: flex;
     height: 100%;
     background-color: #e4e2e2;
-    text-align: center;
     color:#8a8a8a;
+    position: relative;
+    padding: 20px;
 }
 footer div{
-    display: inline-block;
-    max-width: 25%;
-    padding: 20px;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
     text-align: left;
 }
 footer h1{
@@ -499,14 +533,26 @@ footer li{
     margin-bottom: 10px;
     font-size: 15px;
 }
+.fnoticias li{
+    text-transform: capitalize;
+}
+.fnoticias li:hover{
+    cursor: pointer;
+    opacity: 0.8;
+
+}
 footer i img{
     height: 15px;
 }
-.flinks li{
+.frsociais{
+    width: 250px;
+}
+.frsociais li{
     color: white;
     border-radius: 5px;
     font-size: 15px;
-    text-align: left;
+    width: 100%;
+    box-shadow: 2px 5px 10px white;
 }
 .rs1{
     background-color: #3333bebb;
@@ -515,12 +561,14 @@ footer i img{
     background-color: #ff00d4bb;
 }
 .rs3{
-    background-color: #0059ffbb;
+    background-color: #397effbb;
 }
 .rs4{
     background-color: #ff0000bb;
 }
-.flinks li:hover{
-    opacity: 0.5;
+.frsociais li:hover{
+    opacity: 0.8;
     cursor: pointer;
+    box-shadow: 2px 5px 10px #00000049;
+    transition: 0.5s;
 }
